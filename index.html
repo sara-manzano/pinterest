@@ -6,6 +6,7 @@
     <meta name="description" content="plataforma de descubrimiento visual y red social enfocada en encontrar, guardar y organizar ideas mediante imágenes y vídeos llamados pines">
     <meta name="keywords" content="Pinterest, pines, tableros, imágenes, vídeos, ideas, inspiración, red social, descubrimiento visual">
     <title>Pinterest</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="canonical" href="https://es.pinterest.com">
   </head>
@@ -15,16 +16,33 @@
         <a href="/" class="logo">
           <img src=img/pinterest.png alt="Pinterest">
         </a>
+        <form action="/buscar" method="get" role="search">
+          <label for="busqueda">Buscar ideas</label>
+          <input
+            type="search"
+            id="busqueda"
+            name="q"
+            placeholder="Buscar pines, temas, ideas">
+          <button type="submit">Buscar</button>
+        </form>
+      </nav>
         <ul>
           <li><a href="/explorar">Explorar</a></li>
           <li><a href="/mis-tableros">Mis Tableros</a></li>
           <li><a href="/subir-imagen">Subir Imagen</a></li>
         </ul>
       </nav>
-      <h1>Pinterest</h1>
     </header>
 
     <main>
+      <section aria-labelledby="intro-titulo">
+        <h1 id="intro-titulo">Descubre ideas en Pinterest</h1>
+        <p>
+          Explora imágenes de viajes, mascotas y moda, y guarda tus favoritas en tableros
+          personalizados para inspirarte cuando quieras.
+        </p>
+      </section>
+
       <section id="relevantes">
         <h2>Imágenes Relevantes</h2>
 
@@ -89,6 +107,14 @@
 
     <footer>
       <p>&copy; 2026 Pinterest. Derechos reservados.</p>
+      <nav aria-label="Enlaces legales">
+        <ul>
+          <li><a href="/acerca-de">Acerca de</a></li>
+          <li><a href="/privacidad">Política de privacidad</a></li>
+          <li><a href="/terminos">Términos de uso</a></li>
+          <li><a href="/ayuda">Centro de ayuda</a></li>
+        </ul>
+      </nav>
     </footer>
 
     <script src="scripts.js"></script>
